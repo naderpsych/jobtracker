@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>משרות פסיכולוגיה קלינית</title>
+<style>
+  :root{
+    --bg:#f7f6f3; --card:#ffffff; --ink:#1f1e1c; --muted:#6b6a65;
+    --line:#e7e5df; --accent:#3c5ccf; --accent-bg:#eef1fb;
+    --new:#0f7a52; --new-bg:#e4f4ec; --chip-on:#1f1e1c; --chip-on-ink:#fff;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{--bg:#181715;--card:#232220;--ink:#f2f0ea;--muted:#a3a09a;
+    --line:#34322e;--accent:#8aa0f0;--accent-bg:#242a41;--new:#57c495;
+    --new-bg:#1c2d26;--chip-on:#f2f0ea;--chip-on-ink:#181715;}
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:system-ui,"Segoe UI",Arial,sans-serif;line-height:1.6}
+  .wrap{max-width:760px;margin:0 auto;padding:20px 16px 60px}
+  h1{font-size:22px;font-weight:600;margin:0 0 2px}
+  .sub{color:var(--muted);font-size:14px;margin-bottom:18px}
+  .controls{position:sticky;top:0;background:var(--bg);padding:10px 0;
+    border-bottom:1px solid var(--line);margin-bottom:16px;z-index:5}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px}
+  .chip{border:1px solid var(--line);background:var(--card);color:var(--ink);
+    padding:6px 14px;border-radius:999px;font-size:14px;cursor:pointer;user-select:none}
+  .chip.on{background:var(--chip-on);color:var(--chip-on-ink);border-color:var(--chip-on)}
+  input[type=search]{width:100%;padding:10px 12px;border:1px solid var(--line);
+    border-radius:10px;background:var(--card);color:var(--ink);font-size:15px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;
+    padding:14px 16px;margin-bottom:12px}
+  .card h2{font-size:16px;font-weight:600;margin:0 0 6px;line-height:1.4}
+  .card h2 a{color:var(--ink);text-decoration:none}
+  .card h2 a:hover{text-decoration:underline}
+  .meta{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:8px}
+  .badge{font-size:12px;padding:2px 9px;border-radius:999px;background:var(--accent-bg);
+    color:var(--accent);white-space:nowrap}
+  .badge.new{background:var(--new-bg);color:var(--new);font-weight:600}
+  .badge.date{background:transparent;color:var(--muted);padding-inline:0}
+  .reason{font-size:13px;color:var(--accent);margin-bottom:4px}
+  .snip{font-size:14px;color:var(--muted)}
+  .empty{text-align:center;color:var(--muted);padding:50px 10px}
+  .foot{color:var(--muted);font-size:12px;text-align:center;margin-top:24px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>משרות פסיכולוגיה קלינית</h1>
+  <div class="sub" id="sub">טוען…</div>
+
+  <div class="controls">
+    <div class="chips" id="chips"></div>
+    <input type="search" id="q" placeholder="חיפוש חופשי — למשל: תל אביב, טראומה, מתמחה">
+  </div>
+
+  <div id="list"></div>
+  <div class="foot" id="foot"></div>
+</div>
+
+<script>
+const REGIONS = ["מרכז","דרום","כל הארץ","צפון","ירושלים"];
+const DEFAULT_ON = ["מרכז","דרום","כל הארץ"];
+let JOBS = [];
+
+function loadPrefs(){
+  try{ return JSON.parse(localStorage.getItem("regions")) || DEFAULT_ON; }
+  catch(e){ return DEFAULT_ON; }
+}
+let active = new Set(loadPrefs());
+
+function savePrefs(){ localStorage.setItem("regions", JSON.stringify([...active])); }
+
+function daysSince(iso){
+  if(!iso) return 999;
+  return Math.floor((Date.now() - new Date(iso).getTime())/86400000);
+}
+
+function renderChips(){
+  const c = document.getElementById("chips"); c.innerHTML = "";
+  REGIONS.forEach(r=>{
+    const el = document.createElement("div");
+    el.className = "chip" + (active.has(r) ? " on" : "");
+    el.textContent = r;
+    el.onclick = ()=>{ active.has(r)?active.delete(r):active.add(r); savePrefs(); renderChips(); render(); };
+    c.appendChild(el);
+  });
+}
+
+function render(){
+  const q = document.getElementById("q").value.trim();
+  const list = document.getElementById("list");
+  const shown = JOBS.filter(j=>{
+    const inRegion = j.areas.some(a=>active.has(a));
+    const inText = !q || (j.title+" "+j.snippet+" "+(j.tags||[]).join(" ")).includes(q);
+    return inRegion && inText;
+  });
+  document.getElementById("foot").textContent =
+    shown.length ? `מציג ${shown.length} מתוך ${JOBS.length} משרות` : "";
+  if(!shown.length){
+    list.innerHTML = '<div class="empty">אין משרות שתואמות את הסינון הנוכחי.</div>';
+    return;
+  }
+  list.innerHTML = shown.map(j=>{
+    const fresh = daysSince(j.first_seen) <= 3;
+    const badges = [];
+    if(fresh) badges.push('<span class="badge new">חדש</span>');
+    j.areas.forEach(a=>badges.push(`<span class="badge">${a}</span>`));
+    (j.tags||[]).forEach(t=>badges.push(`<span class="badge">${t}</span>`));
+    if(j.date) badges.push(`<span class="badge date">${j.date}</span>`);
+    return `<div class="card">
+      <h2><a href="${j.url}" target="_blank" rel="noopener">${j.title}</a></h2>
+      <div class="meta">${badges.join("")}</div>
+      <div class="reason">${j.reason||""}</div>
+      <div class="snip">${j.snippet||""}</div>
+    </div>`;
+  }).join("");
+}
+
+fetch("jobs.json?_="+Date.now())
+  .then(r=>r.json())
+  .then(d=>{
+    JOBS = d.jobs||[];
+    const when = d.updated ? new Date(d.updated).toLocaleString("he-IL",{day:"numeric",month:"numeric",hour:"2-digit",minute:"2-digit"}) : "";
+    document.getElementById("sub").textContent =
+      `${JOBS.length} משרות בלוח · עודכן ${when}`;
+    renderChips(); render();
+  })
+  .catch(()=>{
+    document.getElementById("sub").textContent = "עדיין אין נתונים — הסורק ירוץ בקרוב וימלא את הלוח.";
+    renderChips();
+    document.getElementById("list").innerHTML =
+      '<div class="empty">הרץ את ה-workflow פעם אחת (Actions → Run workflow) כדי למלא את הלוח.</div>';
+  });
+
+document.getElementById("q").addEventListener("input", render);
+</script>
+</body>
+</html>
