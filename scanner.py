@@ -53,6 +53,25 @@ CLINICAL_PHRASES = [
 OTHER_TRACKS = ["חינוכי", "חינוכית", "שיקומי", "שיקומית", "התפתחותי", "התפתחותית", "רפואי", "רפואית"]
 HIRING = ["דרוש", "דרושה", "דרושים", "דרושות", "מחפש", "מחפשים", "מחפשות", "מוזמנים", "מוזמנות"]
 
+# משרה שמציעה *מקום התמחות* אמיתי (למי שלפני/במהלך התמחות)
+INTERNSHIP_OFFER = [
+    "מוכר להתמחות", "מוכרת להתמחות", "מוכרים להתמחות", "מוכרת כמוסד התמחות",
+    "מקום התמחות", "מקומות התמחות",
+    "מגייס מתמחים", "מגייסת מתמחים", "מגייסים מתמחים",
+    "דרוש מתמחה", "דרושה מתמחה", "דרוש/ה מתמחה", "דרושים מתמחים", "דרושות מתמחות",
+    "קליטת מתמחים", "לקליטת מתמחים", "קולטים מתמחים", "קולטת מתמחים",
+    "תקן התמחות", "תקני התמחות", "משרת התמחות",
+    "מלגת התמחות", "על חשבון מלגה", "חובות שמיעה",
+]
+# אם מופיע אחד מאלה — זו *לא* התמחות (משרה למומחים/מתמחים קיימים)
+INTERNSHIP_EXCLUDE = [
+    "אינה במסגרת התמחות", "אינו במסגרת התמחות", "אינה במסגרת ההתמחות",
+    "אינו במסגרת ההתמחות", "לא במסגרת התמחות", "לא במסגרת ההתמחות",
+    "אינה התמחות", "אינו התמחות",
+]
+# "מומחים בלבד" / "מומחית - בלבד" וכו' — משרה למומחים, לא התמחות
+EXPERT_ONLY = re.compile(r"מומח(?:ים|ית|ה|יות)\s*[-–]?\s*בלבד")
+
 
 def is_relevant(title, snippet, body):
     full = " ".join([title or "", snippet or "", body or ""])
@@ -67,6 +86,19 @@ def is_relevant(title, snippet, body):
     if any(w in clean for w in HIRING) and is_psych and not any(w in clean for w in OTHER_TRACKS):
         return True, "משרת פסיכולוג/ית ללא התמחות מוגדרת (פתוחה)"
     return False, ""
+
+
+def is_internship(title, snippet, body):
+    """True רק אם המודעה מציעה *מקום התמחות* אמיתי (ולא משרה למומחים/מתמחים קיימים)."""
+    full = " ".join([title or "", snippet or "", body or ""])
+    if any(x in full for x in INTERNSHIP_EXCLUDE) or EXPERT_ONLY.search(full):
+        return False
+    if any(x in full for x in INTERNSHIP_OFFER):
+        return True
+    # "מלגה" לבדה רחבה מדי — נספרת רק בהקשר פסיכולוגי / מתמחה
+    if "מלגה" in full and ("פסיכולוג" in full or "מתמח" in full):
+        return True
+    return False
 
 
 def place_tags(text):
@@ -104,10 +136,13 @@ def list_posts():
                 title = a.get_text(strip=True)
                 if not title:
                     continue
-                container = a.find_parent(["div", "td", "li", "article"]) or a.parent
-                ctext = container.get_text(" ", strip=True) if container else title
-                snippet = ctext.replace(title, "", 1).strip()
+                inner = a.find_parent(["div", "td", "li", "article"]) or a.parent
+                itext = inner.get_text(" ", strip=True) if inner else title
+                snippet = itext.replace(title, "", 1).strip()
                 snippet = re.sub(r"\s+", " ", snippet)[:220]
+                # התאריך יושב בשורה התחתונה של הכרטיס — רמה אחת מעל הכותרת/תקציר
+                card = inner.parent if inner is not None else None
+                ctext = card.get_text(" ", strip=True) if card is not None else itext
                 dm = re.search(r"\b(\d{1,2}/\d{1,2}/\d{4})\b", ctext)
                 p = posts.setdefault(pid, {"title": title, "snippet": snippet,
                                            "date": dm.group(1) if dm else "", "areas": set()})
@@ -121,6 +156,24 @@ def post_body(url):
     for tag in soup(["nav", "header", "footer", "script", "style", "aside"]):
         tag.decompose()
     return soup.get_text(separator=" ", strip=True)
+
+
+def ad_only(body):
+    """Trim a fetched page down to just this ad's own text.
+
+    hebpsy ad pages wrap the real content between "פורסם על ידי ..." and
+    "תוכן מודעה זו פורסם...". Slicing to that region drops the site menu and
+    any neighbouring ads shown on the same page, so the internship check only
+    reads THIS ad. If the markers are missing we return "" so the caller falls
+    back to title+snippet (safer than matching bled-in text).
+    """
+    if not body:
+        return ""
+    start = body.find("פורסם על ידי")
+    end = body.find("תוכן מודעה זו פורסם")
+    if start != -1 and end != -1 and end > start:
+        return body[start:end]
+    return ""
 
 
 def maybe_email(new_jobs):
@@ -151,17 +204,22 @@ def main():
     board = list_posts()
     print(f"נמצאו {len(board)} מודעות בכל הלוחות.")
 
-    # classify any post we haven't fetched before
+    # classify new posts, and back-fill the internship tag on older ones that predate it
     for pid, info in board.items():
-        if pid in seen:
+        rec = seen.get(pid)
+        if rec is not None and "internship" in rec:
             continue
         try:
             body = post_body(f"{BASE}/bulletinBoard.asp?id={pid}")
         except Exception as e:
             print(f"דילוג על {pid}: {e}")
             continue
-        ok, reason = is_relevant(info["title"], info["snippet"], body)
-        seen[pid] = {"relevant": ok, "reason": reason, "first_seen": TODAY}
+        intern = is_internship(info["title"], info["snippet"], ad_only(body))
+        if rec is None:
+            ok, reason = is_relevant(info["title"], info["snippet"], body)
+            seen[pid] = {"relevant": ok, "reason": reason, "internship": intern, "first_seen": TODAY}
+        else:
+            rec["internship"] = intern   # keep original relevant/reason/first_seen
         time.sleep(1)
 
     # build the display list = relevant jobs currently on the board
@@ -171,6 +229,10 @@ def main():
         if not rec or not rec["relevant"]:
             continue
         seen[pid]["last_seen"] = TODAY
+        # כל מודעה רלוונטית היא "משרה"; מודעות שמציעות מקום התמחות מקבלות בנוסף "התמחות"
+        cats = ["משרה"]
+        if rec.get("internship"):
+            cats.append("התמחות")
         job = {
             "id": pid,
             "title": info["title"],
@@ -179,6 +241,7 @@ def main():
             "url": f"{BASE}/bulletinBoard.asp?id={pid}",
             "areas": sorted(info["areas"]),
             "tags": place_tags(info["title"] + " " + info["snippet"]),
+            "cats": cats,
             "reason": rec["reason"],
             "first_seen": rec["first_seen"],
         }

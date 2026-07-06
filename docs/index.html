@@ -38,9 +38,13 @@
   .badge{font-size:12px;padding:2px 9px;border-radius:999px;background:var(--accent-bg);
     color:var(--accent);white-space:nowrap}
   .badge.new{background:var(--new-bg);color:var(--new);font-weight:600}
+  .badge.intern{background:var(--accent);color:#fff;font-weight:600}
   .badge.date{background:transparent;color:var(--muted);padding-inline:0}
   .reason{font-size:13px;color:var(--accent);margin-bottom:4px}
   .snip{font-size:14px;color:var(--muted)}
+  .cdate{font-size:12px;color:var(--muted);margin-top:10px;padding-top:8px;
+    border-top:1px solid var(--line)}
+  .cats{display:flex;gap:8px;margin-bottom:10px}
   .empty{text-align:center;color:var(--muted);padding:50px 10px}
   .foot{color:var(--muted);font-size:12px;text-align:center;margin-top:24px}
 </style>
@@ -51,6 +55,7 @@
   <div class="sub" id="sub">טוען…</div>
 
   <div class="controls">
+    <div class="cats" id="cats"></div>
     <div class="chips" id="chips"></div>
     <input type="search" id="q" placeholder="חיפוש חופשי — למשל: תל אביב, טראומה, מתמחה">
   </div>
@@ -62,7 +67,11 @@
 <script>
 const REGIONS = ["מרכז","דרום","כל הארץ","צפון","ירושלים"];
 const DEFAULT_ON = ["מרכז","דרום","כל הארץ"];
+const CATS = [["משרה","משרות"],["התמחות","התמחויות"],["all","הכל"]];
 let JOBS = [];
+
+let activeCat = localStorage.getItem("cat") || "משרה";   // ברירת מחדל: משרות
+function saveCat(){ localStorage.setItem("cat", activeCat); }
 
 function loadPrefs(){
   try{ return JSON.parse(localStorage.getItem("regions")) || DEFAULT_ON; }
@@ -88,13 +97,26 @@ function renderChips(){
   });
 }
 
+function renderCats(){
+  const c = document.getElementById("cats"); c.innerHTML = "";
+  CATS.forEach(([val,label])=>{
+    const el = document.createElement("div");
+    el.className = "chip" + (activeCat===val ? " on" : "");
+    el.textContent = label;
+    el.onclick = ()=>{ activeCat = val; saveCat(); renderCats(); render(); };
+    c.appendChild(el);
+  });
+}
+
 function render(){
   const q = document.getElementById("q").value.trim();
   const list = document.getElementById("list");
   const shown = JOBS.filter(j=>{
+    const cats = j.cats || ["משרה"];
+    const inCat = activeCat==="all" || cats.includes(activeCat);
     const inRegion = j.areas.some(a=>active.has(a));
     const inText = !q || (j.title+" "+j.snippet+" "+(j.tags||[]).join(" ")).includes(q);
-    return inRegion && inText;
+    return inCat && inRegion && inText;
   });
   document.getElementById("foot").textContent =
     shown.length ? `מציג ${shown.length} מתוך ${JOBS.length} משרות` : "";
@@ -104,16 +126,18 @@ function render(){
   }
   list.innerHTML = shown.map(j=>{
     const fresh = daysSince(j.first_seen) <= 3;
+    const cats = j.cats || ["משרה"];
     const badges = [];
     if(fresh) badges.push('<span class="badge new">חדש</span>');
+    if(cats.includes("התמחות")) badges.push('<span class="badge intern">התמחות</span>');
     j.areas.forEach(a=>badges.push(`<span class="badge">${a}</span>`));
     (j.tags||[]).forEach(t=>badges.push(`<span class="badge">${t}</span>`));
-    if(j.date) badges.push(`<span class="badge date">${j.date}</span>`);
     return `<div class="card">
       <h2><a href="${j.url}" target="_blank" rel="noopener">${j.title}</a></h2>
       <div class="meta">${badges.join("")}</div>
       <div class="reason">${j.reason||""}</div>
       <div class="snip">${j.snippet||""}</div>
+      ${j.date ? `<div class="cdate">פורסם: ${j.date}</div>` : ""}
     </div>`;
   }).join("");
 }
@@ -125,11 +149,11 @@ fetch("jobs.json?_="+Date.now())
     const when = d.updated ? new Date(d.updated).toLocaleString("he-IL",{day:"numeric",month:"numeric",hour:"2-digit",minute:"2-digit"}) : "";
     document.getElementById("sub").textContent =
       `${JOBS.length} משרות בלוח · עודכן ${when}`;
-    renderChips(); render();
+    renderCats(); renderChips(); render();
   })
   .catch(()=>{
     document.getElementById("sub").textContent = "עדיין אין נתונים — הסורק ירוץ בקרוב וימלא את הלוח.";
-    renderChips();
+    renderCats(); renderChips();
     document.getElementById("list").innerHTML =
       '<div class="empty">הרץ את ה-workflow פעם אחת (Actions → Run workflow) כדי למלא את הלוח.</div>';
   });
