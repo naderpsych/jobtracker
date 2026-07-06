@@ -256,7 +256,12 @@ def main():
         if age > KEEP_DAYS:
             del seen[pid]
 
-    jobs.sort(key=lambda j: (j["first_seen"], j["date"]), reverse=True)
+    def _pub(j):
+        """תאריך הפרסום כמפתח מיון כרונולוגי; מודעות בלי תאריך יורדות לסוף."""
+        m = re.match(r"(\d{1,2})/(\d{1,2})/(\d{4})$", j.get("date", ""))
+        return (int(m.group(3)), int(m.group(2)), int(m.group(1))) if m else (0, 0, 0)
+
+    jobs.sort(key=lambda j: (_pub(j), j["first_seen"]), reverse=True)
 
     os.makedirs("docs", exist_ok=True)
     with open(OUT_FILE, "w", encoding="utf-8") as f:
