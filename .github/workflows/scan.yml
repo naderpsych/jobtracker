@@ -2,7 +2,13 @@ name: scan jobs
 
 on:
   schedule:
-    - cron: "0 */6 * * *"   # every 6 hours
+    # שעות שעון ישראל (קיץ, UTC+3). GitHub רץ ב-UTC ובמאמץ מיטבי — ייתכנו עיכובים/דילוגים.
+    # הדקות :50 (לא :00) כדי לברוח מהעומס של תחילת השעה.
+    - cron: "50 5 * * *"    # 08:50 שעון ישראל
+    - cron: "50 9 * * *"    # 12:50 שעון ישראל
+    - cron: "50 13 * * *"   # 16:50 שעון ישראל
+    - cron: "50 19 * * *"   # 22:50 שעון ישראל
+    - cron: "50 0 * * *"    # 03:50 שעון ישראל
   workflow_dispatch:         # run by hand from the Actions tab
 
 permissions:
