@@ -19,6 +19,9 @@ import smtplib
 import time
 from datetime import date, datetime
 from email.mime.text import MIMEText
+from zoneinfo import ZoneInfo
+
+IL_TZ = ZoneInfo("Asia/Jerusalem")   # שעון ישראל, עם התאמת קיץ/חורף אוטומטית
 
 import requests
 from bs4 import BeautifulSoup
@@ -265,7 +268,7 @@ def main():
 
     os.makedirs("docs", exist_ok=True)
     with open(OUT_FILE, "w", encoding="utf-8") as f:
-        json.dump({"updated": datetime.now().isoformat(timespec="minutes"),
+        json.dump({"updated": datetime.now(IL_TZ).isoformat(timespec="minutes"),
                    "count": len(jobs), "jobs": jobs}, f, ensure_ascii=False, indent=1)
     with open(STATE_FILE, "w", encoding="utf-8") as f:
         json.dump({"seen": seen}, f, ensure_ascii=False, indent=0)
