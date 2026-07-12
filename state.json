@@ -309,7 +309,7 @@
 "relevant": true,
 "reason": "מוזכר במפורש: פסיכולוגיה קלינית",
 "first_seen": "2026-07-06",
-"last_seen": "2026-07-08",
+"last_seen": "2026-07-12",
 "internship": false
 },
 "94832": {
@@ -1265,6 +1265,13 @@
 "reason": "מוזכר במפורש: פסיכולוגיה קלינית",
 "internship": false,
 "first_seen": "2026-07-11",
+"last_seen": "2026-07-12"
+},
+"87058": {
+"relevant": true,
+"reason": "מוזכר במפורש: פסיכולוגיה קלינית",
+"internship": false,
+"first_seen": "2026-07-12",
 "last_seen": "2026-07-12"
 }
 }
