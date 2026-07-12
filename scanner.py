@@ -88,6 +88,9 @@ def is_relevant(title, snippet, body):
         return True, "משרת פסיכולוג/ית הכוללת מסלול קליני"
     if any(w in clean for w in HIRING) and is_psych and not any(w in clean for w in OTHER_TRACKS):
         return True, "משרת פסיכולוג/ית ללא התמחות מוגדרת (פתוחה)"
+    # מסלול אחר (למשל חינוכי) שמציין במפורש שגם קליני מתקבל
+    if any(w in clean for w in HIRING) and is_psych and re.search(r"קליני", full):
+        return True, "מסלול אחר הפתוח גם לבוגרי קליני"
     return False, ""
 
 
@@ -208,10 +211,11 @@ def main():
     print(f"נמצאו {len(board)} מודעות בכל הלוחות.")
 
     # classify posts using ONLY each ad's own text (isolated from neighbouring ads on the page).
-    # "clean" marks entries already classified this way; older entries get re-classified once.
+    # "v" marks the classifier version; entries from older versions get re-classified once.
+    CLS_V = 2
     for pid, info in board.items():
         rec = seen.get(pid)
-        if rec is not None and rec.get("clean"):
+        if rec is not None and rec.get("v") == CLS_V:
             continue
         try:
             body = ad_only(post_body(f"{BASE}/bulletinBoard.asp?id={pid}"))
@@ -222,7 +226,7 @@ def main():
         intern = is_internship(info["title"], info["snippet"], body)
         first_seen = rec["first_seen"] if rec else TODAY
         seen[pid] = {"relevant": ok, "reason": reason, "internship": intern,
-                     "first_seen": first_seen, "clean": True}
+                     "first_seen": first_seen, "v": CLS_V}
         time.sleep(1)
 
     # build the display list = relevant jobs currently on the board
