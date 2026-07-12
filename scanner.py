@@ -207,22 +207,22 @@ def main():
     board = list_posts()
     print(f"נמצאו {len(board)} מודעות בכל הלוחות.")
 
-    # classify new posts, and back-fill the internship tag on older ones that predate it
+    # classify posts using ONLY each ad's own text (isolated from neighbouring ads on the page).
+    # "clean" marks entries already classified this way; older entries get re-classified once.
     for pid, info in board.items():
         rec = seen.get(pid)
-        if rec is not None and "internship" in rec:
+        if rec is not None and rec.get("clean"):
             continue
         try:
-            body = post_body(f"{BASE}/bulletinBoard.asp?id={pid}")
+            body = ad_only(post_body(f"{BASE}/bulletinBoard.asp?id={pid}"))
         except Exception as e:
             print(f"דילוג על {pid}: {e}")
             continue
-        intern = is_internship(info["title"], info["snippet"], ad_only(body))
-        if rec is None:
-            ok, reason = is_relevant(info["title"], info["snippet"], body)
-            seen[pid] = {"relevant": ok, "reason": reason, "internship": intern, "first_seen": TODAY}
-        else:
-            rec["internship"] = intern   # keep original relevant/reason/first_seen
+        ok, reason = is_relevant(info["title"], info["snippet"], body)
+        intern = is_internship(info["title"], info["snippet"], body)
+        first_seen = rec["first_seen"] if rec else TODAY
+        seen[pid] = {"relevant": ok, "reason": reason, "internship": intern,
+                     "first_seen": first_seen, "clean": True}
         time.sleep(1)
 
     # build the display list = relevant jobs currently on the board
