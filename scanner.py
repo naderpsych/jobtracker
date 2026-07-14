@@ -65,6 +65,7 @@ INTERNSHIP_OFFER = [
     "קליטת מתמחים", "לקליטת מתמחים", "קולטים מתמחים", "קולטת מתמחים",
     "תקן התמחות", "תקני התמחות", "משרת התמחות",
     "מלגת התמחות", "על חשבון מלגה", "חובות שמיעה",
+    "התמחות מרפאתית", "התמחות אשפוזית", "הזמנה להתמחות",
 ]
 # אם מופיע אחד מאלה — זו *לא* התמחות (משרה למומחים/מתמחים קיימים)
 INTERNSHIP_EXCLUDE = [
@@ -99,6 +100,9 @@ def is_internship(title, snippet, body):
     full = " ".join([title or "", snippet or "", body or ""])
     if any(x in full for x in INTERNSHIP_EXCLUDE) or EXPERT_ONLY.search(full):
         return False
+    # "התמחות" בכותרת = הכרזה ישירה על הצעת התמחות
+    if "התמחות" in (title or ""):
+        return True
     if any(x in full for x in INTERNSHIP_OFFER):
         return True
     # "מלגה" לבדה רחבה מדי — נספרת רק בהקשר פסיכולוגי / מתמחה
@@ -212,7 +216,7 @@ def main():
 
     # classify posts using ONLY each ad's own text (isolated from neighbouring ads on the page).
     # "v" marks the classifier version; entries from older versions get re-classified once.
-    CLS_V = 2
+    CLS_V = 3
     for pid, info in board.items():
         rec = seen.get(pid)
         if rec is not None and rec.get("v") == CLS_V:
