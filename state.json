@@ -1569,6 +1569,35 @@
 "first_seen": "2026-07-15",
 "v": 3,
 "last_seen": "2026-07-15"
+},
+"83665": {
+"relevant": true,
+"reason": "משרת פסיכולוג/ית הכוללת מסלול קליני",
+"internship": false,
+"first_seen": "2026-07-15",
+"v": 3,
+"last_seen": "2026-07-15"
+},
+"88470": {
+"relevant": false,
+"reason": "",
+"internship": true,
+"first_seen": "2026-07-15",
+"v": 3
+},
+"95069": {
+"relevant": false,
+"reason": "",
+"internship": false,
+"first_seen": "2026-07-15",
+"v": 3
+},
+"94679": {
+"relevant": false,
+"reason": "",
+"internship": false,
+"first_seen": "2026-07-15",
+"v": 3
 }
 }
 }
