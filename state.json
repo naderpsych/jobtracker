@@ -1634,6 +1634,45 @@
 "first_seen": "2026-07-16",
 "v": 3,
 "last_seen": "2026-07-16"
+},
+"93683": {
+"relevant": true,
+"reason": "מוזכר במפורש: פסיכולוגים קליניים",
+"internship": true,
+"first_seen": "2026-07-16",
+"v": 3,
+"last_seen": "2026-07-16"
+},
+"94724": {
+"relevant": false,
+"reason": "",
+"internship": false,
+"first_seen": "2026-07-16",
+"v": 3
+},
+"95074": {
+"relevant": true,
+"reason": "משרת פסיכולוג/ית ללא התמחות מוגדרת (פתוחה)",
+"internship": false,
+"first_seen": "2026-07-16",
+"v": 3,
+"last_seen": "2026-07-16"
+},
+"95073": {
+"relevant": true,
+"reason": "מוזכר במפורש: פסיכולוגים קליניים",
+"internship": false,
+"first_seen": "2026-07-16",
+"v": 3,
+"last_seen": "2026-07-16"
+},
+"95075": {
+"relevant": true,
+"reason": "משרת פסיכולוג/ית ללא התמחות מוגדרת (פתוחה)",
+"internship": false,
+"first_seen": "2026-07-16",
+"v": 3,
+"last_seen": "2026-07-16"
 }
 }
 }
