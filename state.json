@@ -194,8 +194,8 @@
 "reason": "משרת פסיכולוג/ית ללא התמחות מוגדרת (פתוחה)",
 "internship": true,
 "first_seen": "2026-07-06",
-"v": 2,
-"last_seen": "2026-07-13"
+"v": 3,
+"last_seen": "2026-07-19"
 },
 "91454": {
 "relevant": false,
@@ -1747,6 +1747,13 @@
 "v": 3
 },
 "94710": {
+"relevant": false,
+"reason": "",
+"internship": false,
+"first_seen": "2026-07-19",
+"v": 3
+},
+"95084": {
 "relevant": false,
 "reason": "",
 "internship": false,
