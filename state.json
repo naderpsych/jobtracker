@@ -1916,6 +1916,28 @@
 "first_seen": "2026-07-25",
 "v": 3,
 "last_seen": "2026-07-26"
+},
+"95108": {
+"relevant": false,
+"reason": "",
+"internship": false,
+"first_seen": "2026-07-26",
+"v": 3
+},
+"94563": {
+"relevant": false,
+"reason": "",
+"internship": false,
+"first_seen": "2026-07-26",
+"v": 3
+},
+"95106": {
+"relevant": true,
+"reason": "מוזכר במפורש: התמחות קלינית",
+"internship": false,
+"first_seen": "2026-07-26",
+"v": 3,
+"last_seen": "2026-07-26"
 }
 }
 }
