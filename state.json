@@ -342,7 +342,7 @@
 "internship": false,
 "first_seen": "2026-07-06",
 "v": 3,
-"last_seen": "2026-07-21"
+"last_seen": "2026-07-28"
 },
 "90678": {
 "relevant": true,
@@ -2047,6 +2047,29 @@
 "94346": {
 "relevant": true,
 "reason": "מוזכר במפורש: פסיכולוגיה קלינית",
+"internship": false,
+"first_seen": "2026-07-28",
+"v": 3,
+"last_seen": "2026-07-28"
+},
+"95121": {
+"relevant": false,
+"reason": "",
+"internship": false,
+"first_seen": "2026-07-28",
+"v": 3
+},
+"95122": {
+"relevant": true,
+"reason": "מוזכר במפורש: פסיכולוגיה קלינית",
+"internship": false,
+"first_seen": "2026-07-28",
+"v": 3,
+"last_seen": "2026-07-28"
+},
+"93025": {
+"relevant": true,
+"reason": "מוזכר במפורש: פסיכולוג/ית קליני",
 "internship": false,
 "first_seen": "2026-07-28",
 "v": 3,
