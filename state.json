@@ -244,9 +244,10 @@
 "92827": {
 "relevant": true,
 "reason": "משרת פסיכולוג/ית הכוללת מסלול קליני",
+"internship": false,
 "first_seen": "2026-07-06",
-"last_seen": "2026-07-12",
-"internship": false
+"v": 3,
+"last_seen": "2026-07-29"
 },
 "93003": {
 "relevant": true,
