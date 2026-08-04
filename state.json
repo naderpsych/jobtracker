@@ -106,7 +106,7 @@
 "internship": false,
 "first_seen": "2026-07-06",
 "v": 3,
-"last_seen": "2026-07-29"
+"last_seen": "2026-08-04"
 },
 "94736": {
 "relevant": true,
@@ -195,7 +195,7 @@
 "internship": true,
 "first_seen": "2026-07-06",
 "v": 3,
-"last_seen": "2026-07-28"
+"last_seen": "2026-08-04"
 },
 "91454": {
 "relevant": false,
@@ -2206,6 +2206,37 @@
 "v": 3
 },
 "95146": {
+"relevant": false,
+"reason": "",
+"internship": false,
+"first_seen": "2026-08-04",
+"v": 3
+},
+"92446": {
+"relevant": true,
+"reason": "מוזכר במפורש: פסיכולוגיה קלינית",
+"internship": false,
+"first_seen": "2026-08-04",
+"v": 3,
+"last_seen": "2026-08-04"
+},
+"95152": {
+"relevant": true,
+"reason": "מוזכר במפורש: פסיכולוגיה קלינית",
+"internship": true,
+"first_seen": "2026-08-04",
+"v": 3,
+"last_seen": "2026-08-04"
+},
+"95150": {
+"relevant": true,
+"reason": "משרת פסיכולוג/ית הכוללת מסלול קליני",
+"internship": false,
+"first_seen": "2026-08-04",
+"v": 3,
+"last_seen": "2026-08-04"
+},
+"95151": {
 "relevant": false,
 "reason": "",
 "internship": false,
