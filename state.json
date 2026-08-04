@@ -252,9 +252,10 @@
 "93003": {
 "relevant": true,
 "reason": "מוזכר במפורש: פסיכולוג/ית קליני",
+"internship": false,
 "first_seen": "2026-07-06",
-"last_seen": "2026-07-12",
-"internship": false
+"v": 3,
+"last_seen": "2026-08-04"
 },
 "94946": {
 "relevant": false,
@@ -1646,7 +1647,7 @@
 "internship": true,
 "first_seen": "2026-07-16",
 "v": 3,
-"last_seen": "2026-07-26"
+"last_seen": "2026-08-04"
 },
 "94724": {
 "relevant": false,
@@ -2191,6 +2192,20 @@
 "last_seen": "2026-08-04"
 },
 "93598": {
+"relevant": false,
+"reason": "",
+"internship": false,
+"first_seen": "2026-08-04",
+"v": 3
+},
+"94644": {
+"relevant": false,
+"reason": "",
+"internship": false,
+"first_seen": "2026-08-04",
+"v": 3
+},
+"95146": {
 "relevant": false,
 "reason": "",
 "internship": false,
