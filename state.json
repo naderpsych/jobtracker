@@ -2410,6 +2410,29 @@
 "first_seen": "2026-08-10",
 "v": 3,
 "last_seen": "2026-08-11"
+},
+"95101": {
+"relevant": true,
+"reason": "משרת פסיכולוג/ית ללא התמחות מוגדרת (פתוחה)",
+"internship": false,
+"first_seen": "2026-08-11",
+"v": 3,
+"last_seen": "2026-08-11"
+},
+"95178": {
+"relevant": false,
+"reason": "",
+"internship": false,
+"first_seen": "2026-08-11",
+"v": 3
+},
+"95179": {
+"relevant": true,
+"reason": "משרת פסיכולוג/ית ללא התמחות מוגדרת (פתוחה)",
+"internship": false,
+"first_seen": "2026-08-11",
+"v": 3,
+"last_seen": "2026-08-11"
 }
 }
 }
