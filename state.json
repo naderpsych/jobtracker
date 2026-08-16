@@ -752,11 +752,11 @@
 "internship": false
 },
 "90909": {
-"relevant": true,
-"reason": "מוזכר במפורש: פסיכולוגיה קלינית",
+"relevant": false,
+"reason": "",
+"internship": false,
 "first_seen": "2026-07-06",
-"last_seen": "2026-07-10",
-"internship": false
+"v": 3
 },
 "89051": {
 "relevant": false,
@@ -1904,7 +1904,7 @@
 "internship": true,
 "first_seen": "2026-07-23",
 "v": 3,
-"last_seen": "2026-08-04"
+"last_seen": "2026-08-16"
 },
 "94290": {
 "relevant": true,
@@ -2589,6 +2589,13 @@
 "v": 3
 },
 "95193": {
+"relevant": false,
+"reason": "",
+"internship": false,
+"first_seen": "2026-08-16",
+"v": 3
+},
+"94096": {
 "relevant": false,
 "reason": "",
 "internship": false,
