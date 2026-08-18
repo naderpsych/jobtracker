@@ -292,10 +292,11 @@
 },
 "93037": {
 "relevant": true,
-"reason": "משרת פסיכולוג/ית הכוללת מסלול קליני",
+"reason": "משרת פסיכולוג/ית ללא התמחות מוגדרת (פתוחה)",
+"internship": false,
 "first_seen": "2026-07-06",
-"last_seen": "2026-07-07",
-"internship": false
+"v": 3,
+"last_seen": "2026-08-18"
 },
 "94492": {
 "relevant": true,
