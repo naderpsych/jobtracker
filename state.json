@@ -2668,6 +2668,28 @@
 "first_seen": "2026-08-18",
 "v": 3,
 "last_seen": "2026-08-18"
+},
+"94359": {
+"relevant": false,
+"reason": "",
+"internship": false,
+"first_seen": "2026-08-18",
+"v": 3
+},
+"94672": {
+"relevant": false,
+"reason": "",
+"internship": false,
+"first_seen": "2026-08-18",
+"v": 3
+},
+"95216": {
+"relevant": true,
+"reason": "מוזכר במפורש: פסיכולוגית קלינית",
+"internship": false,
+"first_seen": "2026-08-18",
+"v": 3,
+"last_seen": "2026-08-18"
 }
 }
 }
