@@ -2653,6 +2653,21 @@
 "internship": false,
 "first_seen": "2026-08-17",
 "v": 3
+},
+"95214": {
+"relevant": false,
+"reason": "",
+"internship": false,
+"first_seen": "2026-08-18",
+"v": 3
+},
+"95213": {
+"relevant": true,
+"reason": "מוזכר במפורש: פסיכולוגים קליניים",
+"internship": false,
+"first_seen": "2026-08-18",
+"v": 3,
+"last_seen": "2026-08-18"
 }
 }
 }
