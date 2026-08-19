@@ -2719,6 +2719,14 @@
 "internship": false,
 "first_seen": "2026-08-19",
 "v": 3
+},
+"95222": {
+"relevant": true,
+"reason": "מוזכר במפורש: פסיכולוגיה קלינית",
+"internship": true,
+"first_seen": "2026-08-19",
+"v": 3,
+"last_seen": "2026-08-19"
 }
 }
 }
