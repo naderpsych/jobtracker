@@ -38,7 +38,7 @@
 "internship": false,
 "first_seen": "2026-07-06",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "94813": {
 "relevant": true,
@@ -62,7 +62,7 @@
 "internship": true,
 "first_seen": "2026-07-06",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "91455": {
 "relevant": true,
@@ -86,7 +86,7 @@
 "internship": false,
 "first_seen": "2026-07-06",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "93003": {
 "relevant": true,
@@ -109,20 +109,13 @@
 "internship": false,
 "first_seen": "2026-07-06",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "94492": {
 "relevant": true,
 "reason": "משרת פסיכולוג/ית הכוללת מסלול קליני",
 "first_seen": "2026-07-06",
 "last_seen": "2026-07-09",
-"internship": false
-},
-"94987": {
-"relevant": true,
-"reason": "משרת פסיכולוג/ית ללא התמחות מוגדרת (פתוחה)",
-"first_seen": "2026-07-06",
-"last_seen": "2026-07-08",
 "internship": false
 },
 "86638": {
@@ -132,13 +125,6 @@
 "first_seen": "2026-07-06",
 "v": 3,
 "last_seen": "2026-08-09"
-},
-"93214": {
-"relevant": true,
-"reason": "משרת פסיכולוג/ית ללא התמחות מוגדרת (פתוחה)",
-"first_seen": "2026-07-06",
-"last_seen": "2026-07-08",
-"internship": false
 },
 "94377": {
 "relevant": true,
@@ -162,7 +148,7 @@
 "internship": false,
 "first_seen": "2026-07-06",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "93020": {
 "relevant": true,
@@ -170,7 +156,7 @@
 "internship": true,
 "first_seen": "2026-07-06",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "94984": {
 "relevant": true,
@@ -245,7 +231,7 @@
 "internship": true,
 "first_seen": "2026-07-06",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "90620": {
 "relevant": true,
@@ -253,7 +239,7 @@
 "internship": true,
 "first_seen": "2026-07-06",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "90098": {
 "relevant": true,
@@ -261,7 +247,7 @@
 "internship": false,
 "first_seen": "2026-07-06",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "95011": {
 "relevant": true,
@@ -317,7 +303,7 @@
 "internship": false,
 "first_seen": "2026-07-06",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "94881": {
 "relevant": true,
@@ -363,7 +349,7 @@
 "internship": false,
 "first_seen": "2026-07-06",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "94992": {
 "relevant": true,
@@ -371,14 +357,7 @@
 "internship": false,
 "first_seen": "2026-07-06",
 "v": 3,
-"last_seen": "2026-08-22"
-},
-"94963": {
-"relevant": true,
-"reason": "מוזכר במפורש: פסיכולוגיה קלינית",
-"first_seen": "2026-07-06",
-"last_seen": "2026-07-08",
-"internship": false
+"last_seen": "2026-08-23"
 },
 "94614": {
 "relevant": true,
@@ -386,7 +365,7 @@
 "internship": false,
 "first_seen": "2026-07-06",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "89808": {
 "relevant": true,
@@ -394,7 +373,7 @@
 "internship": false,
 "first_seen": "2026-07-06",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "94702": {
 "relevant": true,
@@ -439,7 +418,7 @@
 "internship": true,
 "first_seen": "2026-07-06",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "94599": {
 "relevant": true,
@@ -495,7 +474,7 @@
 "internship": false,
 "first_seen": "2026-07-06",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "82910": {
 "relevant": true,
@@ -503,7 +482,7 @@
 "internship": false,
 "first_seen": "2026-07-06",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "94888": {
 "relevant": true,
@@ -519,7 +498,7 @@
 "internship": false,
 "first_seen": "2026-07-06",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "93788": {
 "relevant": true,
@@ -527,7 +506,7 @@
 "internship": false,
 "first_seen": "2026-07-06",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "54160": {
 "relevant": true,
@@ -535,7 +514,7 @@
 "internship": true,
 "first_seen": "2026-07-06",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "90365": {
 "relevant": true,
@@ -543,7 +522,7 @@
 "internship": true,
 "first_seen": "2026-07-06",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "76710": {
 "relevant": true,
@@ -591,7 +570,7 @@
 "internship": false,
 "first_seen": "2026-07-07",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "94046": {
 "relevant": true,
@@ -609,13 +588,6 @@
 "v": 3,
 "last_seen": "2026-07-16"
 },
-"89781": {
-"relevant": false,
-"reason": "",
-"internship": false,
-"first_seen": "2026-07-08",
-"v": 3
-},
 "94907": {
 "relevant": true,
 "reason": "משרת פסיכולוג/ית ללא התמחות מוגדרת (פתוחה)",
@@ -624,13 +596,6 @@
 "v": 3,
 "last_seen": "2026-07-18"
 },
-"95024": {
-"relevant": false,
-"reason": "",
-"internship": false,
-"first_seen": "2026-07-08",
-"v": 3
-},
 "94712": {
 "relevant": true,
 "reason": "מוזכר במפורש: פסיכולוגיה קלינית",
@@ -638,20 +603,6 @@
 "first_seen": "2026-07-08",
 "v": 3,
 "last_seen": "2026-08-07"
-},
-"95026": {
-"relevant": false,
-"reason": "",
-"internship": false,
-"first_seen": "2026-07-08",
-"v": 3
-},
-"95025": {
-"relevant": false,
-"reason": "",
-"internship": false,
-"first_seen": "2026-07-08",
-"v": 3
 },
 "93931": {
 "relevant": true,
@@ -857,7 +808,7 @@
 "internship": false,
 "first_seen": "2026-07-13",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "95056": {
 "relevant": false,
@@ -908,7 +859,7 @@
 "internship": false,
 "first_seen": "2026-07-14",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "93980": {
 "relevant": false,
@@ -960,7 +911,7 @@
 "internship": false,
 "first_seen": "2026-07-15",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "83665": {
 "relevant": true,
@@ -968,7 +919,7 @@
 "internship": false,
 "first_seen": "2026-07-15",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "88470": {
 "relevant": false,
@@ -1056,7 +1007,7 @@
 "internship": false,
 "first_seen": "2026-07-16",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "95075": {
 "relevant": true,
@@ -1290,7 +1241,7 @@
 "internship": true,
 "first_seen": "2026-07-23",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "94290": {
 "relevant": true,
@@ -1298,7 +1249,7 @@
 "internship": false,
 "first_seen": "2026-07-23",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "89663": {
 "relevant": true,
@@ -1306,7 +1257,7 @@
 "internship": false,
 "first_seen": "2026-07-25",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "95108": {
 "relevant": false,
@@ -1328,7 +1279,7 @@
 "internship": false,
 "first_seen": "2026-07-26",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "95111": {
 "relevant": false,
@@ -1365,7 +1316,7 @@
 "internship": false,
 "first_seen": "2026-07-27",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "95118": {
 "relevant": false,
@@ -1410,7 +1361,7 @@
 "internship": false,
 "first_seen": "2026-07-27",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "94828": {
 "relevant": false,
@@ -1439,7 +1390,7 @@
 "internship": false,
 "first_seen": "2026-07-28",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "95121": {
 "relevant": false,
@@ -1454,7 +1405,7 @@
 "internship": false,
 "first_seen": "2026-07-28",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "93025": {
 "relevant": true,
@@ -1462,7 +1413,7 @@
 "internship": false,
 "first_seen": "2026-07-28",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "87767": {
 "relevant": true,
@@ -1470,7 +1421,7 @@
 "internship": false,
 "first_seen": "2026-07-30",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "94297": {
 "relevant": true,
@@ -1507,7 +1458,7 @@
 "internship": false,
 "first_seen": "2026-08-02",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "86646": {
 "relevant": true,
@@ -1515,7 +1466,7 @@
 "internship": false,
 "first_seen": "2026-08-02",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "95140": {
 "relevant": false,
@@ -1537,7 +1488,7 @@
 "internship": false,
 "first_seen": "2026-08-03",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "95142": {
 "relevant": true,
@@ -1545,7 +1496,7 @@
 "internship": false,
 "first_seen": "2026-08-03",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "95144": {
 "relevant": false,
@@ -1567,7 +1518,7 @@
 "internship": false,
 "first_seen": "2026-08-03",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "92555": {
 "relevant": true,
@@ -1575,7 +1526,7 @@
 "internship": false,
 "first_seen": "2026-08-03",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "93598": {
 "relevant": false,
@@ -1620,7 +1571,7 @@
 "internship": false,
 "first_seen": "2026-08-04",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "95151": {
 "relevant": false,
@@ -1642,7 +1593,7 @@
 "internship": false,
 "first_seen": "2026-08-04",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "95156": {
 "relevant": true,
@@ -1650,7 +1601,7 @@
 "internship": true,
 "first_seen": "2026-08-04",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "95159": {
 "relevant": false,
@@ -1721,7 +1672,7 @@
 "internship": false,
 "first_seen": "2026-08-08",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "94471": {
 "relevant": false,
@@ -1736,7 +1687,7 @@
 "internship": false,
 "first_seen": "2026-08-09",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "95168": {
 "relevant": false,
@@ -1758,7 +1709,7 @@
 "internship": true,
 "first_seen": "2026-08-09",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "95170": {
 "relevant": true,
@@ -1766,7 +1717,7 @@
 "internship": false,
 "first_seen": "2026-08-09",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "95174": {
 "relevant": false,
@@ -1795,7 +1746,7 @@
 "internship": false,
 "first_seen": "2026-08-10",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "95101": {
 "relevant": true,
@@ -1803,7 +1754,7 @@
 "internship": false,
 "first_seen": "2026-08-11",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "95178": {
 "relevant": false,
@@ -1818,7 +1769,7 @@
 "internship": false,
 "first_seen": "2026-08-11",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "95182": {
 "relevant": false,
@@ -1833,7 +1784,7 @@
 "internship": false,
 "first_seen": "2026-08-11",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "83830": {
 "relevant": true,
@@ -1841,7 +1792,7 @@
 "internship": true,
 "first_seen": "2026-08-11",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "95183": {
 "relevant": true,
@@ -1849,7 +1800,7 @@
 "internship": true,
 "first_seen": "2026-08-12",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "94628": {
 "relevant": false,
@@ -1871,7 +1822,7 @@
 "internship": false,
 "first_seen": "2026-08-12",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "95188": {
 "relevant": true,
@@ -1879,7 +1830,7 @@
 "internship": false,
 "first_seen": "2026-08-12",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "95190": {
 "relevant": true,
@@ -1887,7 +1838,7 @@
 "internship": false,
 "first_seen": "2026-08-13",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "95189": {
 "relevant": true,
@@ -1895,7 +1846,7 @@
 "internship": false,
 "first_seen": "2026-08-13",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "95192": {
 "relevant": false,
@@ -2015,7 +1966,7 @@
 "internship": false,
 "first_seen": "2026-08-17",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "89608": {
 "relevant": true,
@@ -2023,7 +1974,7 @@
 "internship": false,
 "first_seen": "2026-08-17",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "95211": {
 "relevant": true,
@@ -2031,7 +1982,7 @@
 "internship": false,
 "first_seen": "2026-08-17",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "92744": {
 "relevant": false,
@@ -2053,7 +2004,7 @@
 "internship": false,
 "first_seen": "2026-08-18",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "94359": {
 "relevant": false,
@@ -2075,7 +2026,7 @@
 "internship": false,
 "first_seen": "2026-08-18",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "95217": {
 "relevant": false,
@@ -2111,7 +2062,7 @@
 "internship": true,
 "first_seen": "2026-08-19",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "95223": {
 "relevant": false,
@@ -2224,7 +2175,7 @@
 "internship": true,
 "first_seen": "2026-08-21",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "94330": {
 "relevant": true,
@@ -2232,7 +2183,7 @@
 "internship": false,
 "first_seen": "2026-08-21",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 },
 "94999": {
 "relevant": false,
@@ -2282,7 +2233,7 @@
 "internship": false,
 "first_seen": "2026-08-21",
 "v": 3,
-"last_seen": "2026-08-22"
+"last_seen": "2026-08-23"
 }
 }
 }
