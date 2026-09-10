@@ -2090,6 +2090,21 @@
 "first_seen": "2026-09-10",
 "v": 3,
 "last_seen": "2026-09-10"
+},
+"95289": {
+"relevant": true,
+"reason": "מוזכר במפורש: פסיכולוגים קליניים",
+"internship": false,
+"first_seen": "2026-09-10",
+"v": 3,
+"last_seen": "2026-09-10"
+},
+"95286": {
+"relevant": false,
+"reason": "",
+"internship": false,
+"first_seen": "2026-09-10",
+"v": 3
 }
 }
 }
