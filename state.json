@@ -550,7 +550,7 @@
 "internship": false,
 "first_seen": "2026-07-30",
 "v": 3,
-"last_seen": "2026-09-10"
+"last_seen": "2026-09-17"
 },
 "94297": {
 "relevant": true,
@@ -2110,6 +2110,22 @@
 "internship": false,
 "first_seen": "2026-09-17",
 "v": 3
+},
+"95316": {
+"relevant": true,
+"reason": "מוזכר במפורש: פסיכולוגיה קלינית",
+"internship": false,
+"first_seen": "2026-09-17",
+"v": 3,
+"last_seen": "2026-09-17"
+},
+"95312": {
+"relevant": true,
+"reason": "משרת פסיכולוג/ית הכוללת מסלול קליני",
+"internship": false,
+"first_seen": "2026-09-17",
+"v": 3,
+"last_seen": "2026-09-17"
 }
 }
 }
