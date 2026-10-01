@@ -1957,6 +1957,21 @@
 "internship": false,
 "first_seen": "2026-10-01",
 "v": 3
+},
+"95359": {
+"relevant": true,
+"reason": "משרת פסיכולוג/ית ללא התמחות מוגדרת (פתוחה)",
+"internship": false,
+"first_seen": "2026-10-01",
+"v": 3,
+"last_seen": "2026-10-01"
+},
+"94934": {
+"relevant": false,
+"reason": "",
+"internship": false,
+"first_seen": "2026-10-01",
+"v": 3
 }
 }
 }
