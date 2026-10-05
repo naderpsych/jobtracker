@@ -574,7 +574,7 @@
 "internship": false,
 "first_seen": "2026-08-13",
 "v": 3,
-"last_seen": "2026-09-27"
+"last_seen": "2026-10-05"
 },
 "95209": {
 "relevant": true,
@@ -1858,6 +1858,67 @@
 "v": 3
 },
 "92401": {
+"relevant": false,
+"reason": "",
+"internship": false,
+"first_seen": "2026-10-05",
+"v": 3
+},
+"95379": {
+"relevant": true,
+"reason": "משרת פסיכולוג/ית ללא התמחות מוגדרת (פתוחה)",
+"internship": false,
+"first_seen": "2026-10-05",
+"v": 3,
+"last_seen": "2026-10-05"
+},
+"94146": {
+"relevant": true,
+"reason": "מוזכר במפורש: פסיכולוגיה קלינית",
+"internship": false,
+"first_seen": "2026-10-05",
+"v": 3,
+"last_seen": "2026-10-05"
+},
+"93385": {
+"relevant": false,
+"reason": "",
+"internship": false,
+"first_seen": "2026-10-05",
+"v": 3
+},
+"95374": {
+"relevant": true,
+"reason": "מוזכר במפורש: פסיכולוגית קלינית",
+"internship": false,
+"first_seen": "2026-10-05",
+"v": 3,
+"last_seen": "2026-10-05"
+},
+"89341": {
+"relevant": true,
+"reason": "משרת פסיכולוג/ית ללא התמחות מוגדרת (פתוחה)",
+"internship": true,
+"first_seen": "2026-10-05",
+"v": 3,
+"last_seen": "2026-10-05"
+},
+"95378": {
+"relevant": true,
+"reason": "מוזכר במפורש: פסיכולוגיה קלינית",
+"internship": false,
+"first_seen": "2026-10-05",
+"v": 3,
+"last_seen": "2026-10-05"
+},
+"94064": {
+"relevant": false,
+"reason": "",
+"internship": false,
+"first_seen": "2026-10-05",
+"v": 3
+},
+"95373": {
 "relevant": false,
 "reason": "",
 "internship": false,
