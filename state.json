@@ -1899,6 +1899,58 @@
 "internship": false,
 "first_seen": "2026-10-12",
 "v": 3
+},
+"95419": {
+"relevant": true,
+"reason": "משרת פסיכולוג/ית ללא התמחות מוגדרת (פתוחה)",
+"internship": false,
+"first_seen": "2026-10-12",
+"v": 3,
+"last_seen": "2026-10-12"
+},
+"94903": {
+"relevant": false,
+"reason": "",
+"internship": false,
+"first_seen": "2026-10-12",
+"v": 3
+},
+"94359": {
+"relevant": false,
+"reason": "",
+"internship": false,
+"first_seen": "2026-10-12",
+"v": 3
+},
+"89998": {
+"relevant": false,
+"reason": "",
+"internship": false,
+"first_seen": "2026-10-12",
+"v": 3
+},
+"95417": {
+"relevant": true,
+"reason": "מוזכר במפורש: פסיכולוג/ית קליני",
+"internship": false,
+"first_seen": "2026-10-12",
+"v": 3,
+"last_seen": "2026-10-12"
+},
+"95416": {
+"relevant": true,
+"reason": "משרת פסיכולוג/ית הכוללת מסלול קליני",
+"internship": false,
+"first_seen": "2026-10-12",
+"v": 3,
+"last_seen": "2026-10-12"
+},
+"89862": {
+"relevant": false,
+"reason": "",
+"internship": false,
+"first_seen": "2026-10-12",
+"v": 3
 }
 }
 }
