@@ -1936,6 +1936,21 @@
 "internship": false,
 "first_seen": "2026-10-13",
 "v": 3
+},
+"95420": {
+"relevant": false,
+"reason": "",
+"internship": true,
+"first_seen": "2026-10-13",
+"v": 3
+},
+"91862": {
+"relevant": true,
+"reason": "מוזכר במפורש: פסיכולוגיה קלינית",
+"internship": false,
+"first_seen": "2026-10-13",
+"v": 3,
+"last_seen": "2026-10-13"
 }
 }
 }
