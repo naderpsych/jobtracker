@@ -214,7 +214,7 @@
 "internship": false,
 "first_seen": "2026-07-07",
 "v": 3,
-"last_seen": "2026-08-29"
+"last_seen": "2026-10-13"
 },
 "94896": {
 "relevant": true,
@@ -1945,6 +1945,14 @@
 "v": 3
 },
 "91862": {
+"relevant": true,
+"reason": "מוזכר במפורש: פסיכולוגיה קלינית",
+"internship": false,
+"first_seen": "2026-10-13",
+"v": 3,
+"last_seen": "2026-10-13"
+},
+"94823": {
 "relevant": true,
 "reason": "מוזכר במפורש: פסיכולוגיה קלינית",
 "internship": false,
