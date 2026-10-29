@@ -1826,6 +1826,22 @@
 "internship": false,
 "first_seen": "2026-10-28",
 "v": 3
+},
+"94183": {
+"relevant": true,
+"reason": "מוזכר במפורש: פסיכולוג קליני",
+"internship": false,
+"first_seen": "2026-10-29",
+"v": 3,
+"last_seen": "2026-10-29"
+},
+"95478": {
+"relevant": true,
+"reason": "משרת פסיכולוג/ית ללא התמחות מוגדרת (פתוחה)",
+"internship": false,
+"first_seen": "2026-10-29",
+"v": 3,
+"last_seen": "2026-10-29"
 }
 }
 }
