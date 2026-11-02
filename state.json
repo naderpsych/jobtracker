@@ -1690,6 +1690,42 @@
 "internship": false,
 "first_seen": "2026-11-01",
 "v": 3
+},
+"95299": {
+"relevant": false,
+"reason": "",
+"internship": false,
+"first_seen": "2026-11-02",
+"v": 3
+},
+"95492": {
+"relevant": false,
+"reason": "",
+"internship": false,
+"first_seen": "2026-11-02",
+"v": 3
+},
+"95491": {
+"relevant": true,
+"reason": "מוזכר במפורש: התמחות קלינית",
+"internship": true,
+"first_seen": "2026-11-02",
+"v": 3,
+"last_seen": "2026-11-02"
+},
+"95318": {
+"relevant": false,
+"reason": "",
+"internship": false,
+"first_seen": "2026-11-02",
+"v": 3
+},
+"90186": {
+"relevant": false,
+"reason": "",
+"internship": false,
+"first_seen": "2026-11-02",
+"v": 3
 }
 }
 }
