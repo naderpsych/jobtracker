@@ -1718,6 +1718,21 @@
 "internship": false,
 "first_seen": "2026-11-02",
 "v": 3
+},
+"95494": {
+"relevant": false,
+"reason": "",
+"internship": false,
+"first_seen": "2026-11-03",
+"v": 3
+},
+"92879": {
+"relevant": true,
+"reason": "מוזכר במפורש: פסיכולוג קליני",
+"internship": false,
+"first_seen": "2026-11-03",
+"v": 3,
+"last_seen": "2026-11-03"
 }
 }
 }
