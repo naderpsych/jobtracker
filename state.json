@@ -1770,6 +1770,28 @@
 "internship": false,
 "first_seen": "2026-11-03",
 "v": 3
+},
+"94376": {
+"relevant": true,
+"reason": "מוזכר במפורש: פסיכולוגיה קלינית",
+"internship": false,
+"first_seen": "2026-11-03",
+"v": 3,
+"last_seen": "2026-11-03"
+},
+"92367": {
+"relevant": false,
+"reason": "",
+"internship": false,
+"first_seen": "2026-11-03",
+"v": 3
+},
+"95497": {
+"relevant": false,
+"reason": "",
+"internship": false,
+"first_seen": "2026-11-03",
+"v": 3
 }
 }
 }
