@@ -1834,6 +1834,21 @@
 "internship": false,
 "first_seen": "2026-11-05",
 "v": 3
+},
+"94724": {
+"relevant": false,
+"reason": "",
+"internship": false,
+"first_seen": "2026-11-05",
+"v": 3
+},
+"95505": {
+"relevant": true,
+"reason": "מוזכר במפורש: פסיכולוג/ית קליני",
+"internship": false,
+"first_seen": "2026-11-05",
+"v": 3,
+"last_seen": "2026-11-05"
 }
 }
 }
