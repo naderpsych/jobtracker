@@ -1835,6 +1835,13 @@
 "internship": false,
 "first_seen": "2026-11-06",
 "v": 3
+},
+"95322": {
+"relevant": false,
+"reason": "",
+"internship": true,
+"first_seen": "2026-11-07",
+"v": 3
 }
 }
 }
