@@ -966,7 +966,7 @@
 "internship": false,
 "first_seen": "2026-10-12",
 "v": 3,
-"last_seen": "2026-11-03"
+"last_seen": "2026-11-16"
 },
 "94903": {
 "relevant": false,
@@ -1773,6 +1773,35 @@
 "internship": false,
 "first_seen": "2026-11-15",
 "v": 3
+},
+"94967": {
+"relevant": false,
+"reason": "",
+"internship": false,
+"first_seen": "2026-11-16",
+"v": 3
+},
+"94246": {
+"relevant": false,
+"reason": "",
+"internship": false,
+"first_seen": "2026-11-16",
+"v": 3
+},
+"94934": {
+"relevant": false,
+"reason": "",
+"internship": false,
+"first_seen": "2026-11-16",
+"v": 3
+},
+"95547": {
+"relevant": true,
+"reason": "משרת פסיכולוג/ית ללא התמחות מוגדרת (פתוחה)",
+"internship": false,
+"first_seen": "2026-11-16",
+"v": 3,
+"last_seen": "2026-11-16"
 }
 }
 }
