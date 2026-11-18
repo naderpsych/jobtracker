@@ -1778,6 +1778,29 @@
 "first_seen": "2026-11-16",
 "v": 3,
 "last_seen": "2026-11-18"
+},
+"95558": {
+"relevant": false,
+"reason": "",
+"internship": false,
+"first_seen": "2026-11-18",
+"v": 3
+},
+"95557": {
+"relevant": true,
+"reason": "משרת פסיכולוג/ית הכוללת מסלול קליני",
+"internship": false,
+"first_seen": "2026-11-18",
+"v": 3,
+"last_seen": "2026-11-18"
+},
+"90019": {
+"relevant": true,
+"reason": "משרת פסיכולוג/ית ללא התמחות מוגדרת (פתוחה)",
+"internship": true,
+"first_seen": "2026-11-18",
+"v": 3,
+"last_seen": "2026-11-18"
 }
 }
 }
