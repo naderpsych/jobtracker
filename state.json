@@ -54,7 +54,7 @@
 "internship": false,
 "first_seen": "2026-07-06",
 "v": 3,
-"last_seen": "2026-11-21"
+"last_seen": "2026-11-22"
 },
 "81439": {
 "relevant": true,
@@ -78,7 +78,7 @@
 "internship": false,
 "first_seen": "2026-07-06",
 "v": 3,
-"last_seen": "2026-11-21"
+"last_seen": "2026-11-22"
 },
 "89806": {
 "relevant": true,
@@ -86,7 +86,7 @@
 "internship": false,
 "first_seen": "2026-07-06",
 "v": 3,
-"last_seen": "2026-11-21"
+"last_seen": "2026-11-22"
 },
 "89808": {
 "relevant": true,
@@ -94,7 +94,7 @@
 "internship": false,
 "first_seen": "2026-07-06",
 "v": 3,
-"last_seen": "2026-11-21"
+"last_seen": "2026-11-22"
 },
 "89807": {
 "relevant": true,
@@ -102,7 +102,7 @@
 "internship": false,
 "first_seen": "2026-07-06",
 "v": 3,
-"last_seen": "2026-11-21"
+"last_seen": "2026-11-22"
 },
 "82910": {
 "relevant": true,
@@ -110,7 +110,7 @@
 "internship": false,
 "first_seen": "2026-07-06",
 "v": 3,
-"last_seen": "2026-11-21"
+"last_seen": "2026-11-22"
 },
 "93008": {
 "relevant": true,
@@ -118,7 +118,7 @@
 "internship": false,
 "first_seen": "2026-07-06",
 "v": 3,
-"last_seen": "2026-11-21"
+"last_seen": "2026-11-22"
 },
 "93788": {
 "relevant": true,
@@ -126,7 +126,7 @@
 "internship": false,
 "first_seen": "2026-07-06",
 "v": 3,
-"last_seen": "2026-11-21"
+"last_seen": "2026-11-22"
 },
 "94775": {
 "relevant": true,
@@ -142,7 +142,7 @@
 "internship": false,
 "first_seen": "2026-07-09",
 "v": 3,
-"last_seen": "2026-11-21"
+"last_seen": "2026-11-22"
 },
 "83665": {
 "relevant": true,
@@ -150,7 +150,7 @@
 "internship": false,
 "first_seen": "2026-07-15",
 "v": 3,
-"last_seen": "2026-11-21"
+"last_seen": "2026-11-22"
 },
 "89663": {
 "relevant": true,
@@ -158,7 +158,7 @@
 "internship": false,
 "first_seen": "2026-07-25",
 "v": 3,
-"last_seen": "2026-11-21"
+"last_seen": "2026-11-22"
 },
 "95106": {
 "relevant": true,
@@ -190,7 +190,7 @@
 "internship": false,
 "first_seen": "2026-08-02",
 "v": 3,
-"last_seen": "2026-11-21"
+"last_seen": "2026-11-22"
 },
 "92332": {
 "relevant": true,
@@ -208,14 +208,6 @@
 "v": 3,
 "last_seen": "2026-11-10"
 },
-"92446": {
-"relevant": true,
-"reason": "מוזכר במפורש: פסיכולוגיה קלינית",
-"internship": false,
-"first_seen": "2026-08-04",
-"v": 3,
-"last_seen": "2026-10-07"
-},
 "95156": {
 "relevant": true,
 "reason": "מוזכר במפורש: פסיכולוגיה קלינית",
@@ -230,7 +222,7 @@
 "internship": false,
 "first_seen": "2026-08-11",
 "v": 3,
-"last_seen": "2026-11-21"
+"last_seen": "2026-11-22"
 },
 "83830": {
 "relevant": true,
@@ -246,7 +238,7 @@
 "internship": false,
 "first_seen": "2026-08-12",
 "v": 3,
-"last_seen": "2026-11-21"
+"last_seen": "2026-11-22"
 },
 "95188": {
 "relevant": true,
@@ -262,7 +254,7 @@
 "internship": false,
 "first_seen": "2026-08-13",
 "v": 3,
-"last_seen": "2026-11-21"
+"last_seen": "2026-11-22"
 },
 "94630": {
 "relevant": true,
@@ -278,7 +270,7 @@
 "internship": false,
 "first_seen": "2026-08-25",
 "v": 3,
-"last_seen": "2026-11-21"
+"last_seen": "2026-11-22"
 },
 "90726": {
 "relevant": true,
@@ -286,7 +278,7 @@
 "internship": true,
 "first_seen": "2026-08-25",
 "v": 3,
-"last_seen": "2026-11-21"
+"last_seen": "2026-11-22"
 },
 "94492": {
 "relevant": true,
@@ -302,7 +294,7 @@
 "internship": false,
 "first_seen": "2026-09-02",
 "v": 3,
-"last_seen": "2026-11-21"
+"last_seen": "2026-11-22"
 },
 "95267": {
 "relevant": true,
@@ -326,7 +318,7 @@
 "internship": false,
 "first_seen": "2026-09-07",
 "v": 3,
-"last_seen": "2026-11-21"
+"last_seen": "2026-11-22"
 },
 "90951": {
 "relevant": true,
@@ -374,23 +366,7 @@
 "internship": false,
 "first_seen": "2026-09-15",
 "v": 3,
-"last_seen": "2026-11-21"
-},
-"95304": {
-"relevant": true,
-"reason": "מוזכר במפורש: פסיכולוגיה קלינית",
-"internship": true,
-"first_seen": "2026-09-15",
-"v": 3,
-"last_seen": "2026-10-07"
-},
-"95313": {
-"relevant": true,
-"reason": "מוזכר במפורש: פסיכולוג/ית קליני",
-"internship": false,
-"first_seen": "2026-09-16",
-"v": 3,
-"last_seen": "2026-10-07"
+"last_seen": "2026-11-22"
 },
 "95316": {
 "relevant": true,
@@ -406,7 +382,7 @@
 "internship": false,
 "first_seen": "2026-09-17",
 "v": 3,
-"last_seen": "2026-11-21"
+"last_seen": "2026-11-22"
 },
 "95317": {
 "relevant": true,
@@ -446,7 +422,7 @@
 "internship": false,
 "first_seen": "2026-09-23",
 "v": 3,
-"last_seen": "2026-11-21"
+"last_seen": "2026-11-22"
 },
 "95341": {
 "relevant": true,
@@ -542,7 +518,7 @@
 "internship": false,
 "first_seen": "2026-10-05",
 "v": 3,
-"last_seen": "2026-11-21"
+"last_seen": "2026-11-22"
 },
 "95385": {
 "relevant": true,
@@ -566,28 +542,7 @@
 "internship": false,
 "first_seen": "2026-10-07",
 "v": 3,
-"last_seen": "2026-11-21"
-},
-"94629": {
-"relevant": false,
-"reason": "",
-"internship": false,
-"first_seen": "2026-10-07",
-"v": 3
-},
-"95394": {
-"relevant": false,
-"reason": "",
-"internship": false,
-"first_seen": "2026-10-07",
-"v": 3
-},
-"95392": {
-"relevant": false,
-"reason": "",
-"internship": false,
-"first_seen": "2026-10-07",
-"v": 3
+"last_seen": "2026-11-22"
 },
 "95391": {
 "relevant": true,
@@ -595,7 +550,7 @@
 "internship": false,
 "first_seen": "2026-10-07",
 "v": 3,
-"last_seen": "2026-11-21"
+"last_seen": "2026-11-22"
 },
 "94971": {
 "relevant": false,
@@ -718,7 +673,7 @@
 "internship": false,
 "first_seen": "2026-10-11",
 "v": 3,
-"last_seen": "2026-11-21"
+"last_seen": "2026-11-22"
 },
 "95408": {
 "relevant": false,
@@ -748,7 +703,7 @@
 "internship": false,
 "first_seen": "2026-10-11",
 "v": 3,
-"last_seen": "2026-11-21"
+"last_seen": "2026-11-22"
 },
 "92033": {
 "relevant": false,
@@ -763,7 +718,7 @@
 "internship": false,
 "first_seen": "2026-10-11",
 "v": 3,
-"last_seen": "2026-11-21"
+"last_seen": "2026-11-22"
 },
 "95243": {
 "relevant": false,
@@ -785,7 +740,7 @@
 "internship": false,
 "first_seen": "2026-10-12",
 "v": 3,
-"last_seen": "2026-11-21"
+"last_seen": "2026-11-22"
 },
 "94903": {
 "relevant": false,
@@ -814,7 +769,7 @@
 "internship": false,
 "first_seen": "2026-10-12",
 "v": 3,
-"last_seen": "2026-11-21"
+"last_seen": "2026-11-22"
 },
 "95416": {
 "relevant": true,
@@ -859,7 +814,7 @@
 "internship": false,
 "first_seen": "2026-10-13",
 "v": 3,
-"last_seen": "2026-11-21"
+"last_seen": "2026-11-22"
 },
 "95068": {
 "relevant": false,
@@ -910,7 +865,7 @@
 "internship": false,
 "first_seen": "2026-10-16",
 "v": 3,
-"last_seen": "2026-11-21"
+"last_seen": "2026-11-22"
 },
 "95436": {
 "relevant": true,
@@ -1031,7 +986,7 @@
 "internship": false,
 "first_seen": "2026-10-21",
 "v": 3,
-"last_seen": "2026-11-21"
+"last_seen": "2026-11-22"
 },
 "95452": {
 "relevant": false,
@@ -1088,7 +1043,7 @@
 "internship": false,
 "first_seen": "2026-10-25",
 "v": 3,
-"last_seen": "2026-11-21"
+"last_seen": "2026-11-22"
 },
 "95471": {
 "relevant": false,
@@ -1146,7 +1101,7 @@
 "internship": false,
 "first_seen": "2026-10-29",
 "v": 3,
-"last_seen": "2026-11-21"
+"last_seen": "2026-11-22"
 },
 "95479": {
 "relevant": true,
@@ -1154,7 +1109,7 @@
 "internship": false,
 "first_seen": "2026-10-29",
 "v": 3,
-"last_seen": "2026-11-21"
+"last_seen": "2026-11-22"
 },
 "95481": {
 "relevant": true,
@@ -1212,7 +1167,7 @@
 "internship": true,
 "first_seen": "2026-11-02",
 "v": 3,
-"last_seen": "2026-11-21"
+"last_seen": "2026-11-22"
 },
 "95318": {
 "relevant": false,
@@ -1241,7 +1196,7 @@
 "internship": false,
 "first_seen": "2026-11-03",
 "v": 3,
-"last_seen": "2026-11-21"
+"last_seen": "2026-11-22"
 },
 "94778": {
 "relevant": true,
@@ -1249,7 +1204,7 @@
 "internship": true,
 "first_seen": "2026-11-03",
 "v": 3,
-"last_seen": "2026-11-21"
+"last_seen": "2026-11-22"
 },
 "95256": {
 "relevant": false,
@@ -1271,7 +1226,7 @@
 "internship": false,
 "first_seen": "2026-11-03",
 "v": 3,
-"last_seen": "2026-11-21"
+"last_seen": "2026-11-22"
 },
 "95495": {
 "relevant": false,
@@ -1372,7 +1327,7 @@
 "internship": false,
 "first_seen": "2026-11-05",
 "v": 3,
-"last_seen": "2026-11-21"
+"last_seen": "2026-11-22"
 },
 "94641": {
 "relevant": false,
@@ -1387,7 +1342,7 @@
 "internship": false,
 "first_seen": "2026-11-05",
 "v": 3,
-"last_seen": "2026-11-21"
+"last_seen": "2026-11-22"
 },
 "94872": {
 "relevant": false,
@@ -1444,7 +1399,7 @@
 "internship": false,
 "first_seen": "2026-11-08",
 "v": 3,
-"last_seen": "2026-11-21"
+"last_seen": "2026-11-22"
 },
 "95516": {
 "relevant": false,
@@ -1620,7 +1575,7 @@
 "internship": false,
 "first_seen": "2026-11-16",
 "v": 3,
-"last_seen": "2026-11-21"
+"last_seen": "2026-11-22"
 },
 "95548": {
 "relevant": true,
@@ -1628,7 +1583,7 @@
 "internship": false,
 "first_seen": "2026-11-16",
 "v": 3,
-"last_seen": "2026-11-21"
+"last_seen": "2026-11-22"
 },
 "95558": {
 "relevant": false,
@@ -1643,7 +1598,7 @@
 "internship": false,
 "first_seen": "2026-11-18",
 "v": 3,
-"last_seen": "2026-11-21"
+"last_seen": "2026-11-22"
 },
 "90019": {
 "relevant": true,
@@ -1651,7 +1606,7 @@
 "internship": true,
 "first_seen": "2026-11-18",
 "v": 3,
-"last_seen": "2026-11-21"
+"last_seen": "2026-11-22"
 },
 "95559": {
 "relevant": true,
@@ -1659,7 +1614,7 @@
 "internship": false,
 "first_seen": "2026-11-18",
 "v": 3,
-"last_seen": "2026-11-21"
+"last_seen": "2026-11-22"
 },
 "95561": {
 "relevant": false,
@@ -1695,7 +1650,7 @@
 "internship": true,
 "first_seen": "2026-11-20",
 "v": 3,
-"last_seen": "2026-11-21"
+"last_seen": "2026-11-22"
 },
 "91538": {
 "relevant": false,
@@ -1752,7 +1707,14 @@
 "internship": false,
 "first_seen": "2026-11-21",
 "v": 3,
-"last_seen": "2026-11-21"
+"last_seen": "2026-11-22"
+},
+"95566": {
+"relevant": false,
+"reason": "",
+"internship": false,
+"first_seen": "2026-11-22",
+"v": 3
 }
 }
 }
