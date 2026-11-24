@@ -438,7 +438,7 @@
 "internship": false,
 "first_seen": "2026-09-28",
 "v": 3,
-"last_seen": "2026-10-28"
+"last_seen": "2026-11-24"
 },
 "95359": {
 "relevant": true,
@@ -1658,6 +1658,27 @@
 "v": 3
 },
 "93974": {
+"relevant": false,
+"reason": "",
+"internship": false,
+"first_seen": "2026-11-24",
+"v": 3
+},
+"77596": {
+"relevant": false,
+"reason": "",
+"internship": false,
+"first_seen": "2026-11-24",
+"v": 3
+},
+"89619": {
+"relevant": false,
+"reason": "",
+"internship": false,
+"first_seen": "2026-11-24",
+"v": 3
+},
+"81839": {
 "relevant": false,
 "reason": "",
 "internship": false,
